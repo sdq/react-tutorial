@@ -1,19 +1,14 @@
 import React, { Component } from 'react';
+import Welcome from './Welcome';
 
 export default class Demo extends Component {
-
-    getGreeting(user) {
-        if (user) {
-          return <h1>Hello, {user}!</h1>;
-        }
-        return <h1>Hello, Stranger.</h1>;
-    }
 
     render() {
         return (
             <div>
-                {this.getGreeting()}
-                {this.getGreeting("Jack")}
+                <Welcome name="Sara" />
+                <Welcome name="Cahal" />
+                <Welcome name="Edite" />
             </div>
         )
     }

@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
-import LifeCycle from './LifeCycle';
 
 export default class Demo extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            name : ''
+    getGreeting(user) {
+        if (user) {
+          return <h1>Hello, {user}!</h1>;
         }
-        this.updateInput = this.updateInput.bind(this);
-    }
-
-    updateInput(e) {
-        this.setState({name : e.target.value})
+        return <h1>Hello, Stranger.</h1>;
     }
 
     render() {
         return (
             <div>
-                <input type="text" onChange={this.updateInput}></input>
-                <LifeCycle name={this.state.name}/>
+                {this.getGreeting()}
+                {this.getGreeting("Jack")}
             </div>
         )
     }
