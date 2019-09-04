@@ -9,7 +9,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = dispatch => {
     return {
-        addFood: (food) => dispatch(action.addFood(food))
+        addFood: (food) => dispatch(action.addFood(food)),
+        removeFood: () => dispatch(action.removeFood()),
     }
 }
 

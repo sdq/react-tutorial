@@ -4,7 +4,7 @@ import ShoppingList from './ShoppingList';
 function App() {
     return (
         <div className="App">
-            <ShoppingList name="sdq"/>
+            <ShoppingList name="mike"/>
         </div>
     );
 }

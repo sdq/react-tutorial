@@ -13,7 +13,7 @@ export default class Demo extends Component {
         return (
             <div>
                 {this.getGreeting()}
-                {this.getGreeting("Jack")}
+                {this.getGreeting("Mike")}
             </div>
         )
     }

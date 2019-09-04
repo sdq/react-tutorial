@@ -14,6 +14,10 @@ export default (state = initialState, action) => {
             newState.foods = newFoods;
             return newState
         //TODO: Remove Food
+        case Type.REMOVE_FOOD:
+                newFoods.pop();
+                newState.foods = newFoods;
+                return newState
 
         default:
             return state
