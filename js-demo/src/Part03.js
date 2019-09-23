@@ -21,7 +21,7 @@ function restParam() {
         return sum;
     }
       
-    alert(add(2, 5, 3))
+    alert(add(2, 5, 3, 10, 5))
 }
 
 function arrowFunction() {

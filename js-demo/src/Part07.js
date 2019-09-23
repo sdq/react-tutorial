@@ -45,7 +45,7 @@ function loadImageAsync() {
             image.src = url;
         });
     }
-    let url = 'https://www.tongji.edu.cn/images/logo.png';
+    let url = '';
     loadImageAsync(url).then(function(value) {
         alert('success:' + value);
     }, function(error) {

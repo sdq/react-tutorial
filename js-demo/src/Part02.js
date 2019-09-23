@@ -25,7 +25,7 @@ function deadZone() {
 
     if (true) {
         tmp = 'abc'; // ReferenceError if let binding
-        // let tmp;
+        //let tmp;
     }
 
     alert(tmp);

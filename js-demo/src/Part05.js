@@ -3,11 +3,11 @@ import React from 'react';
 function objectAssign() {
     const target = { a: 1 };
 
-    const source1 = { b: 2 };
+    const source1 = { a: 2 };
     const source2 = { c: 3 };
 
     Object.assign(target, source1, source2);
-    alert(target.c);
+    alert(target.a);
 }
 
 function shallowCopy() {
